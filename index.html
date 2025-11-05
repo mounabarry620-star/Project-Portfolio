@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Barry Mamadou Bailo - Étudiant en BUT1 Informatique passionné par l'intelligence artificielle">
+    <title>Barry Mamadou Bailo - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Barry Mamadou Bailo</a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#accueil" class="nav__link active-link">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#parcours" class="nav__link">Parcours</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#competences" class="nav__link">Compétences</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projets" class="nav__link">Projets</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#formations" class="nav__link">Formations</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#ambitions" class="nav__link">Ambitions</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                    <li>
+                        <a href="mon_cv.pdf" download class="nav-cv-download">
+                            <i class="fas fa-file-download" aria-label="Télécharger CV"></i> Télécharger mon CV
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero section" id="accueil">
+        <div class="hero__bg-overlay"></div>
+        <div class="hero__container container">
+            <div class="hero__content">
+                <h1 class="hero__title fade-in">Bonjour, je suis<br><span class="hero__name">Barry Mamadou Bailo</span></h1>
+                <p class="hero__subtitle fade-in">Étudiant en BUT1 Informatique – Aix-Marseille Université (site d'Arles)</p>
+                <p class="hero__description fade-in">Passionné par l'intelligence artificielle et les nouvelles technologies</p>
+                <div class="hero__buttons fade-in">
+                    <a href="#projets" class="btn btn--primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn--secondary">Me contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parcours Section -->
+    <section class="parcours section" id="parcours">
+        <div class="container">
+            <h2 class="section__title">À Propos de Moi</h2>
+            <div class="parcours__about-layout">
+                <div class="parcours__photo-container fade-in-up">
+                    <!-- PLACEHOLDER POUR VOTRE PHOTO -->
+                    <!-- Pour ajouter votre vraie photo:
+                         1. Supprimez le div avec class="parcours__photo-placeholder"
+                         2. Ajoutez: <img src="votre-photo.jpg" alt="Barry Mamadou Bailo" class="parcours__photo">
+                         3. Assurez-vous que votre photo est au format carré (ex: 500x500px) pour un meilleur rendu
+                    -->
+                    <div class="parcours__photo-frame">
+                         <img src="profile.jpg" alt="Photo de Barry Mamadou Bailo" class="parcours__photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="parcours__about-text fade-in-up">
+                    <h3>Mon Parcours</h3>
+                    <p>Après l'obtention de mon baccalauréat scientifique option SM avec mention Bien en Guinée (2023), j'ai été orienté par l'État guinéen en génie mécanique à l'université Gamal Abdel Nasser de Conakry, bien que mon premier choix était l'informatique.</p>
+                    <p>Déterminé à poursuivre ma passion, j'ai complété ma L1 et L2 en mécanique, puis postulé via Campus France. J'ai obtenu une admission à l'IUT d'Aix-Marseille, site d'Arles, où je suis actuellement en première année de BUT informatique.</p>
+                    <p>Mon objectif est clair : intégrer une école d'ingénieur, me spécialiser en intelligence artificielle, acquérir une expérience solide en entreprise, puis créer ma propre start-up dédiée aux solutions IA.</p>
+                </div>
+            </div>
+            <div class="parcours__container">
+                <div class="parcours__card fade-in-up">
+                    <div class="parcours__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Formation Initiale</h3>
+                    <p>Baccalauréat scientifique SM avec mention Bien obtenu en 2023 en Guinée. Un excellent départ qui a posé les bases solides de ma formation scientifique.</p>
+                </div>
+
+                <div class="parcours__card fade-in-up">
+                    <div class="parcours__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Génie Mécanique</h3>
+                    <p>L1 et L2 Génie Mécanique à l'Université Gamal Abdel Nasser de Conakry (2023-2025). Une orientation initiale qui m'a apporté rigueur et méthode scientifique.</p>
+                </div>
+
+                <div class="parcours__card fade-in-up">
+                    <div class="parcours__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Réorientation Réussie</h3>
+                    <p>Grâce à Campus France et ma détermination, j'ai intégré le BUT Informatique à Aix-Marseille Université en 2025, suivant ma véritable passion pour l'informatique et l'IA.</p>
+                </div>
+
+                <div class="parcours__card fade-in-up">
+                    <div class="parcours__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3>Vision Future</h3>
+                    <p>Mon objectif : devenir ingénieur en IA, travailler dans des entreprises innovantes et créer ma propre start-up dédiée aux solutions d'intelligence artificielle.</p>
+                </div>
+            </div>
+
+            <div class="parcours__story fade-in-up">
+                <h3>Un Parcours de Détermination</h3>
+                <p>Mon parcours illustre ma capacité d'adaptation et ma détermination à poursuivre mes objectifs. Bien que j'aie débuté en génie mécanique, ma passion pour l'informatique et les nouvelles technologies m'a poussé à me réorienter. Cette mobilité internationale et ce changement de filière témoignent de ma motivation à construire ma carrière dans le domaine qui me passionne vraiment : l'intelligence artificielle.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences Section -->
+    <section class="competences section" id="competences">
+        <div class="container">
+            <h2 class="section__title">Compétences</h2>
+            
+            <div class="competences__intro fade-in-up">
+                <h3 class="competences__section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    Compétences Techniques
+                </h3>
+                <div class="tech-skills__grid">
+                    <div class="tech-skill-card fade-in-up">
+                        <div class="tech-skill__icon tech-skill__icon--cpp">
+                            <svg viewBox="0 0 48 48" width="48" height="48">
+                                <path fill="#00599C" d="M24 4L6 13v22l18 9 18-9V13L24 4z"/>
+                                <path fill="#004482" d="M24 4v42l18-9V13L24 4z"/>
+                                <text x="24" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">C++</text>
+                            </svg>
+                        </div>
+                        <h4>C++</h4>
+                        <span class="tech-skill__badge">Débutant</span>
+                    </div>
+                    
+                    <div class="tech-skill-card fade-in-up">
+                        <div class="tech-skill__icon tech-skill__icon--html">
+                            <svg viewBox="0 0 48 48" width="48" height="48">
+                                <path fill="#E44D26" d="M8 4l3 34 13 4 13-4 3-34H8z"/>
+                                <path fill="#F16529" d="M24 4v38l10.5-3L37 4H24z"/>
+                                <path fill="#EBEBEB" d="M24 17h-7l-.5-5H24v-5H11l.2 2 1.3 13H24v-5z"/>
+                                <path fill="#FFF" d="M24 32.5l-.1.1-5.4-1.5-.3-4h-5l.7 7 10 2.8.1-.1v-4.3z"/>
+                                <path fill="#FFF" d="M24 17v5h6.5l-.6 7-5.9 1.6v4.3l10.8-3 .1-1 1.2-14H24z"/>
+                            </svg>
+                        </div>
+                        <h4>HTML</h4>
+                        <span class="tech-skill__badge">Débutant</span>
+                    </div>
+                    
+                    <div class="tech-skill-card fade-in-up">
+                        <div class="tech-skill__icon tech-skill__icon--css">
+                            <svg viewBox="0 0 48 48" width="48" height="48">
+                                <path fill="#1572B6" d="M8 4l3 34 13 4 13-4 3-34H8z"/>
+                                <path fill="#33A9DC" d="M24 4v38l10.5-3L37 4H24z"/>
+                                <path fill="#EBEBEB" d="M24 17H17l-.5-5H24v-5H11l.2 2 1.3 13H24v-5z"/>
+                                <path fill="#FFF" d="M24 32.5l-.1.1-5.4-1.5-.3-4h-5l.7 7 10 2.8.1-.1v-4.3z"/>
+                                <path fill="#FFF" d="M24 17v5h6.5l-.6 7-5.9 1.6v4.3l10.8-3 .1-1 1.2-14H24z"/>
+                            </svg>
+                        </div>
+                        <h4>CSS</h4>
+                        <span class="tech-skill__badge">Débutant</span>
+                    </div>
+                    
+                    <div class="tech-skill-card fade-in-up">
+                        <div class="tech-skill__icon tech-skill__icon--database">
+                            <svg viewBox="0 0 48 48" width="48" height="48" fill="#4479A1">
+                                <ellipse cx="24" cy="12" rx="16" ry="6"/>
+                                <path d="M8 12v8c0 3.3 7.2 6 16 6s16-2.7 16-6v-8"/>
+                                <path d="M8 20v8c0 3.3 7.2 6 16 6s16-2.7 16-6v-8"/>
+                                <path d="M8 28v8c0 3.3 7.2 6 16 6s16-2.7 16-6v-8"/>
+                            </svg>
+                        </div>
+                        <h4>Base de données</h4>
+                        <span class="tech-skill__badge">Débutant</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="competences__container">
+
+                <div class="competences__soft fade-in-up">
+                    <h3 class="competences__subtitle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        Compétences Humaines
+                    </h3>
+                    <div class="soft-skills__grid">
+                        <div class="soft-skill">
+                            <div class="soft-skill__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                            </div>
+                            <h4>Adaptation et Persévérance</h4>
+                            <p>Capacité à s'adapter aux changements et à persévérer face aux défis</p>
+                        </div>
+
+                        <div class="soft-skill">
+                            <div class="soft-skill__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <h4>Travail en Équipe</h4>
+                            <p>Collaboration efficace et esprit d'équipe développé</p>
+                        </div>
+
+                        <div class="soft-skill">
+                            <div class="soft-skill__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                            </div>
+                            <h4>Communication</h4>
+                            <p>Excellentes capacités de communication et d'organisation</p>
+                        </div>
+
+                        <div class="soft-skill">
+                            <div class="soft-skill__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 11l3 3L22 4"></path>
+                                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                </svg>
+                            </div>
+                            <h4>Gestion de Projet</h4>
+                            <p>Organisation et suivi rigoureux des projets</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Section -->
+    <section class="projets section" id="projets">
+        <div class="container">
+            <h2 class="section__title">Expériences et Projets Académiques</h2>
+            <p class="section__description">Portfolio mis à jour régulièrement avec mes nouveaux projets</p>
+            
+            <div class="projets__grid">
+                <div class="project-card fade-in-up">
+                    <div class="project-card__image">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">SAE 1 - Site Web Statique</h3>
+                        <p class="project-card__description">Création d'un site vitrine responsive et moderne pour présenter une entreprise fictive</p>
+                        <div class="project-card__tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="project-card__year">2025</div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in-up">
+                    <div class="project-card__image">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="8" y1="6" x2="21" y2="6"></line>
+                            <line x1="8" y1="12" x2="21" y2="12"></line>
+                            <line x1="8" y1="18" x2="21" y2="18"></line>
+                            <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                            <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                            <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">SAE 2 - Algorithmique</h3>
+                        <p class="project-card__description">Implémentation d'algorithmes de tri et analyse de leur complexité temporelle</p>
+                        <div class="project-card__tags">
+                            <span class="tag">C++</span>
+                        </div>
+                        <div class="project-card__year">2025</div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in-up">
+                    <div class="project-card__image">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">SAE 3 - Base de données</h3>
+                        <p class="project-card__description">Conception et gestion d'une base de données relationnelle avec travail collaboratif</p>
+                        <div class="project-card__tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">Travail collaboratif</span>
+                        </div>
+                        <div class="project-card__year">2025</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formations Section -->
+    <section class="formations section" id="formations">
+        <div class="container">
+            <h2 class="section__title">Formation</h2>
+            
+            <div class="timeline">
+                <div class="timeline__item fade-in-up">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__period">2025 - ...</div>
+                        <h3 class="timeline__title">BUT Informatique</h3>
+                        <p class="timeline__institution">Aix-Marseille Université, site d'Arles</p>
+                        <p class="timeline__description">Formation approfondie en informatique avec spécialisation progressive vers l'intelligence artificielle et le développement logiciel.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item fade-in-up">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__period">2023 - 2025</div>
+                        <h3 class="timeline__title">L1 et L2 Génie Mécanique</h3>
+                        <p class="timeline__institution">Université Gamal Abdel Nasser, Conakry</p>
+                        <p class="timeline__description">Formation scientifique en génie mécanique, développement de compétences analytiques et méthodologiques.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item fade-in-up">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__period">2023</div>
+                        <h3 class="timeline__title">Baccalauréat scientifique SM</h3>
+                        <p class="timeline__institution">Mention Bien - Guinée</p>
+                        <p class="timeline__description">Diplôme obtenu avec mention Bien, bases solides en mathématiques et sciences physiques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ambitions Section -->
+    <section class="ambitions section" id="ambitions">
+        <div class="container">
+            <h2 class="section__title">Ambitions &amp; Motivation</h2>
+            
+            <div class="ambitions__content fade-in-up">
+                <blockquote class="ambitions__quote">
+                    <svg class="quote-icon" width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                    </svg>
+                    <p>Mon parcours montre ma capacité à m'adapter et à poursuivre mes objectifs avec détermination. Passionné par les technologies, je vise à relier les domaines de la mécanique et de l'informatique, en me spécialisant dans l'intelligence artificielle. Je souhaite intégrer une école d'ingénieurs pour approfondir mes compétences et acquérir une solide expérience en entreprise, dans le but de créer ma propre start-up dédiée aux solutions IA.</p>
+                </blockquote>
+
+                <div class="ambitions__goals">
+                    <div class="goal">
+                        <div class="goal__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                        </div>
+                        <h3>École d'Ingénieurs</h3>
+                        <p>Intégrer une grande école d'ingénieurs pour approfondir mes compétences en IA</p>
+                    </div>
+
+                    <div class="goal">
+                        <div class="goal__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                        <h3>Expérience Entreprise</h3>
+                        <p>Acquérir une solide expérience dans des entreprises innovantes spécialisées en IA</p>
+                    </div>
+
+                    <div class="goal">
+                        <div class="goal__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h3>Start-up IA</h3>
+                        <p>Créer ma propre start-up dédiée aux solutions d'intelligence artificielle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section__title">Contact</h2>
+            <p class="section__description">N'hésitez pas à me contacter pour toute opportunité ou question</p>
+            
+            <div class="contact__container">
+                <div class="contact__info fade-in-up">
+                    <h3>Informations de Contact</h3> 
+                    
+                    <div class="contact__item">
+                        <div class="contact__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact__details">
+                            <h4>Email</h4>
+                            <a href="mailto:mounabarry620@gmail.com">mounabarry620@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <div class="contact__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </div>
+                        <div class="contact__details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/mamadou-baillo-barry-aa852333a" target="_blank">Voir mon profil</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <div class="contact__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </div>
+                        <div class="contact__details">
+                            <h4>GitHub</h4>
+                            <span class="contact__soon">À venir</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact__form fade-in-up" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nom</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--full-width">Envoyer le message</button>
+                    <div class="form-message" id="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Barry Mamadou Bailo</h3>
+                    <p>Étudiant en BUT1 Informatique passionné par l'intelligence artificielle</p>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Navigation</h4>
+                    <ul class="footer__links">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#parcours">Parcours</a></li>
+                        <li><a href="#competences">Compétences</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#formations">Formations</a></li>
+                        <li><a href="#ambitions">Ambitions</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Réseaux Sociaux</h4>
+                    <div class="footer__social">
+                        <a href="mailto:mounabarry620@gmail.com" class="social-link" title="Email">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mamadou-baillo-barry-aa852333a" target="_blank" class="social-link" title="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2025 Barry Mamadou Bailo - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
