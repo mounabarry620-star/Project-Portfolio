@@ -1,0 +1,309 @@
+/* RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Fond noir profond pour le dark mode futuriste */
+    background-color: #0a0a0a;
+    /* Texte principal blanc/gris clair */
+    color: #e0e0e0;
+    /* Typographie moderne */
+    font-family: 'Space Grotesk', sans-serif;
+    overflow-x: hidden;
+    /* Optimisation du rendu du texte */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* LOADER (Écran d'initialisation) */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0a0a0a;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-text {
+    font-size: 2vw;
+    font-weight: 300;
+    letter-spacing: 0.5em;
+    color: #ffffff;
+    opacity: 1;
+    /* Sera animé par GSAP */
+}
+
+/* SECTIONS GÉNÉRALES */
+section {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* SECTION HERO (Sci-Fi Minimalist) */
+.hero {
+    position: relative;
+    /* align-items: flex-start;  - Modifié pour centrer le contenu au milieu de l'écran 3D */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* Empêcher le débordement du canvas 3D si nécessaire */
+}
+
+/* Arrière-plan 3D ABSOLU */
+#canvas3d {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    /* À l'arrière */
+    /* background: #111; <- Placeholder, Spline prendra la place */
+}
+
+/* Conteneur principal SUPERIEUR */
+.hero-content {
+    position: relative;
+    z-index: 10;
+    /* Devant le canvas 3D */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrer textuellement */
+    text-align: center;
+}
+
+/* Effet Glassmorphism pour laisser respirer la 3D */
+.glass-panel {
+    padding: 3rem 5rem;
+    border-radius: 20px;
+    background: rgba(10, 10, 10, 0.4);
+    /* Très transparent */
+    backdrop-filter: blur(12px);
+    /* L'effet Glass */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    /* Bordure subtile tech */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.hero-title {
+    font-size: 10vw;
+    /* Typographie géante */
+    font-weight: 700;
+    line-height: 0.9;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    /* Glow léger Sci-Fi */
+}
+
+.overflow-hidden {
+    overflow: hidden;
+    display: block;
+}
+
+/* Le texte sera révélé de bas en haut */
+.reveal-text {
+    display: inline-block;
+    color: #ffffff;
+    transform: translateY(105%);
+    /* Caché initialement */
+    will-change: transform;
+}
+
+.hero-subtitle {
+    margin-top: 2rem;
+    font-size: 1.2vw;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    opacity: 0;
+    /* Caché initialement */
+    will-change: opacity, transform;
+}
+
+/* SECTIONS SUPPLÉMENTAIRES (Pour la démo du scroll) */
+.spacer {
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    /* Ligne subtile */
+}
+
+.dark-spacer {
+    background-color: #050505;
+    /* Encore plus sombre */
+}
+
+.spacer h2 {
+    font-size: 4vw;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+/* SECTION PROJETS (Asymétrique & Moderne) */
+.projects {
+    min-height: 100vh;
+    padding: 10vw 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+    position: relative;
+    z-index: 10;
+}
+
+/* Projet Mis en Évidence (HYPOXIA) */
+.featured-project {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 50vh;
+    display: flex;
+    align-items: flex-end;
+    /* Aligner le contenu en bas */
+    padding: 4rem;
+    position: relative;
+    /* On réutilise la classe .glass-panel pour l'uniformité futuriste */
+    border-radius: 30px;
+    background: linear-gradient(135deg, rgba(20, 20, 20, 0.8) 0%, rgba(5, 5, 5, 0.9) 100%);
+    overflow: hidden;
+}
+
+.featured-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+}
+
+.featured-title {
+    font-size: 5vw;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.featured-subtitle {
+    font-size: 1.2vw;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+/* Badges Technologiques */
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.badge {
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.9vw;
+    font-weight: 500;
+    color: #e0e0e0;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+/* Bouton Néon (Voir le code source) */
+.neon-btn {
+    align-self: flex-start;
+    padding: 1rem 2.5rem;
+    font-size: 1.1vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #00ffcc;
+    /* Cyan futuriste */
+    text-decoration: none;
+    border: 1px solid #00ffcc;
+    border-radius: 50px;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.2), inset 0 0 15px rgba(0, 255, 204, 0.1);
+}
+
+.neon-btn:hover {
+    background: rgba(0, 255, 204, 0.1);
+    box-shadow: 0 0 30px rgba(0, 255, 204, 0.4), inset 0 0 20px rgba(0, 255, 204, 0.2);
+    text-shadow: 0 0 5px #00ffcc;
+}
+
+/* Grille de Projets Académiques */
+.academic-projects {
+    width: 90%;
+    margin: 5rem auto 0;
+}
+
+.section-heading {
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 1rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.grid-card {
+    background: rgba(15, 15, 15, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    padding: 3rem 2rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+    /* Préparation pour GSAP */
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.grid-card:hover {
+    transform: translateY(-5px);
+    background: rgba(25, 25, 25, 0.9);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.grid-card h4 {
+    font-size: 2vw;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.grid-card p {
+    font-size: 1vw;
+    color: #888;
+    font-weight: 300;
+}

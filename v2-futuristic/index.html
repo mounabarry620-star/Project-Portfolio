@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Portfolio | Award Winning Design</title>
+
+    <!-- Google Fonts: Space Grotesk pour un look futuriste et tech -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles de base Lenis (recommandé) -->
+    <style>
+        html.lenis,
+        html.lenis body {
+            height: auto;
+        }
+
+        .lenis.lenis-smooth {
+            scroll-behavior: auto !important;
+        }
+
+        .lenis.lenis-smooth [data-lenis-prevent] {
+            overscroll-behavior: contain;
+        }
+
+        .lenis.lenis-stopped {
+            overflow: hidden;
+        }
+
+        .lenis.lenis-stopped iframe {
+            pointer-events: none;
+        }
+    </style>
+
+    <!-- Fichier CSS personnalisé -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Écran de chargement (Loader) -->
+    <div class="loader">
+        <h1 class="loader-text">INITIALIZING...</h1>
+    </div>
+
+    <!-- Conteneur principal -->
+    <main id="app">
+        <!-- Section Hero (Sci-Fi Minimalist) -->
+        <section class="hero">
+            <!-- Arrière-plan 3D (Z-Index Inférieur) -->
+            <div id="canvas3d">
+                <!-- Le point d'injection pour l'export Spline 3D -->
+            </div>
+
+            <!-- Premier Plan (Z-Index Supérieur) avec Glassmorphism -->
+            <div class="hero-content glass-panel">
+                <h1 class="hero-title">
+                    <span class="overflow-hidden"><span class="reveal-text">BARRY</span></span>
+                    <span class="overflow-hidden"><span class="reveal-text">BAILO</span></span>
+                </h1>
+                <p class="hero-subtitle">Développeur Informatique & Vainqueur Hackathon DevArt</p>
+            </div>
+        </section>
+
+        <!-- Section Projets (Asymétrique & Moderne) -->
+        <section class="projects">
+
+            <!-- Projet Mis en Évidence (HYPOXIA) -->
+            <div class="featured-project glass-panel">
+                <div class="featured-content">
+                    <h2 class="featured-title">PROJET HYPOXIA</h2>
+                    <p class="featured-subtitle">Vainqueur DevArt 2026</p>
+
+                    <div class="tech-badges">
+                        <span class="badge">C++</span>
+                        <span class="badge">Raylib</span>
+                        <span class="badge">Game Design</span>
+                    </div>
+
+                    <a href="https://github.com/mounabarry620-star/Project-Portfolio" target="_blank" class="neon-btn">
+                        <span>Voir le code source</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Grille de Projets Académiques (SAE) -->
+            <div class="academic-projects">
+                <h3 class="section-heading">Projets Académiques (S1)</h3>
+                <div class="projects-grid">
+                    <div class="grid-card grid-item">
+                        <h4>S1.01</h4>
+                        <p>Besoin client</p>
+                    </div>
+                    <div class="grid-card grid-item">
+                        <h4>S1.02</h4>
+                        <p>Algorithmique</p>
+                    </div>
+                    <div class="grid-card grid-item">
+                        <h4>S1.03</h4>
+                        <p>Installation poste</p>
+                    </div>
+                    <div class="grid-card grid-item">
+                        <h4>S1.04</h4>
+                        <p>Base de données</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- CDN GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- CDN Lenis (Smooth Scrolling) -->
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+
+    <!-- Fichier JS personnalisé -->
+    <script src="script.js"></script>
+</body>
+
+</html>
