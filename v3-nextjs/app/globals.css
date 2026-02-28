@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+    --background: #050505;
+    --foreground: #e0e0e0;
+}
+
+body {
+    color: var(--foreground);
+    background: var(--background);
+}
+
+/* Grille tech subtile en arrière-plan global */
+.bg-grid-tech {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+}
